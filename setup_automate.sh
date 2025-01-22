@@ -4,6 +4,11 @@
 echo "Updating and upgrading system..."
 sudo apt update && sudo apt upgrade -y
 
+# Installing Drivers
+sudo apt install ubuntu-drivers-common
+sudo ubuntu-drivers autoinstall
+sudo reboot
+
 # Install Git, Python3, pip3, and python3-venv
 echo "Installing Git, Python3, pip3, and python3-venv..."
 sudo apt install -y git python3 python3-pip python3.12-venv
